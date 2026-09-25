@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyrox Fintech Solutions | Enterprise SoftPOS & Payment Rails</title>
+  <meta name="description" content="Nyrox Fintech Solutions Ltd. builds institutional contactless payment infrastructure, SoftPOS kernels, and financial transaction rails for banks and merchant aggregators.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            nyrox: {
+              base: '#06080F',
+              panel: '#0B0F19',
+              card: '#111827',
+              border: '#1E293B',
+              accent: '#38BDF8',
+              glow: '#0284C7'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { background-color: #06080F; color: #F1F5F9; }
+    .grid-lines {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+  </style>
+</head>
+<body class="selection:bg-sky-500/20 selection:text-sky-300">
+
+  <!-- TOP ENTERPRISE NAV -->
+  <header class="fixed top-0 left-0 w-full z-50 border-b border-nyrox-border bg-nyrox-base/85 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-400 to-blue-700 flex items-center justify-center font-extrabold text-xl text-white shadow-lg shadow-sky-500/20">
+          N
+        </div>
+        <div>
+          <span class="text-xl font-bold tracking-tight text-white block">NYROX</span>
+          <span class="text-[9px] tracking-widest text-sky-400 font-mono block uppercase">Fintech Solutions Ltd.</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="#solutions" class="hover:text-white transition">Solutions</a>
+        <a href="#technology" class="hover:text-white transition">Technology</a>
+        <a href="#compliance" class="hover:text-white transition">Security & Compliance</a>
+        <a href="#partners" class="hover:text-white transition">Bank Acquiring</a>
+      </nav>
+
+      <!-- CTA -->
+      <div>
+        <a href="#contact" class="px-5 py-2.5 rounded-lg text-sm font-semibold bg-white text-slate-950 hover:bg-slate-200 transition">
+          Partner With Us
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-36 pb-20 grid-lines overflow-hidden border-b border-nyrox-border">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      
+      <div class="max-w-3xl space-y-6">
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full border border-sky-500/30 bg-sky-950/30 text-sky-400 text-xs font-mono">
+          <span class="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
+          <span>Next-Generation Merchant Acquiring Rails</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+          Next-Gen Contactless Infrastructure for <span class="bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-300 bg-clip-text text-transparent">Modern Financial Institutions.</span>
+        </h1>
+
+        <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+          Nyrox Fintech Solutions Ltd. provides bank-grade SoftPOS kernels, device attestation engines, and payment switching middleware. We empower commercial banks and payment operators to deploy zero-hardware card acquiring at national scale.
+        </p>
+
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="#solutions" class="px-6 py-3 rounded-lg font-semibold bg-sky-500 text-black hover:bg-sky-400 transition flex items-center space-x-2">
+            <span>Explore Solutions</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#contact" class="px-6 py-3 rounded-lg font-semibold border border-nyrox-border bg-nyrox-panel hover:bg-nyrox-card text-slate-200 transition">
+            Request Enterprise Deck
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-16 mt-16 border-t border-nyrox-border">
+        <div>
+          <div class="text-3xl font-extrabold text-white">0 ৳</div>
+          <div class="text-xs text-slate-400 mt-1">POS Hardware CAPEX per Merchant</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white">&lt; 1.5s</div>
+          <div class="text-xs text-slate-400 mt-1">NFC Authorization Latency</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white">PCI MPoC</div>
+          <div class="text-xs text-slate-400 mt-1">Compliant Architecture</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white">ISO 8583</div>
+          <div class="text-xs text-slate-400 mt-1">NPSB Switching Protocol</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CORE ENTERPRISE SOLUTIONS -->
+  <section id="solutions" class="py-24 bg-nyrox-base border-b border-nyrox-border">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="max-w-2xl space-y-3 mb-16">
+        <span class="text-sky-400 font-mono text-xs uppercase tracking-wider">What We Build</span>
+        <h2 class="text-3xl font-bold text-white tracking-tight">Institutional Payment Solutions</h2>
+        <p class="text-slate-400 text-sm">Modular software components designed to plug directly into existing core banking systems and merchant networks.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Solution 1 -->
+        <div class="p-8 rounded-2xl border border-nyrox-border bg-nyrox-panel space-y-5">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400">
+            <i data-lucide="smartphone-nfc" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">SoftPOS / Tap-to-Phone</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Proprietary contactless EMV kernel that turns standard off-the-shelf NFC Android smartphones into PCI-compliant payment terminals without requiring any external hardware dongles.
+          </p>
+        </div>
+
+        <!-- Solution 2 -->
+        <div class="p-8 rounded-2xl border border-nyrox-border bg-nyrox-panel space-y-5">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Device Attestation & Shield</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Hardware-backed runtime security engine that continuously checks for rootkits, OS modification, debugger attachments, and screen scrapers before any transaction payload is processed.
+          </p>
+        </div>
+
+        <!-- Solution 3 -->
+        <div class="p-8 rounded-2xl border border-nyrox-border bg-nyrox-panel space-y-5">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+            <i data-lucide="layers" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Acquirer Gateway Switch</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            High-throughput ISO 8583 message switching protocol connecting merchant devices directly to acquiring bank switches, Visa, Mastercard, and the National Payment Switch Bangladesh (NPSB).
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY & SECURITY COMPLIANCE -->
+  <section id="compliance" class="py-24 bg-nyrox-panel border-b border-nyrox-border">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-6 space-y-6">
+        <span class="text-sky-400 font-mono text-xs uppercase tracking-wider">Enterprise Security</span>
+        <h2 class="text-3xl font-bold text-white tracking-tight">Zero-Trust Architecture Engineered for Chief Risk Officers</h2>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          At Nyrox, cardholder security is foundational. Our technology stack ensures zero plain-text Primary Account Numbers (PAN) or PIN data ever touch flash storage on any merchant device.
+        </p>
+
+        <div class="space-y-4 pt-2">
+          <div class="flex items-start space-x-3">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-sky-400 shrink-0 mt-0.5"></i>
+            <div>
+              <strong class="text-white text-sm block">DUKPT Dynamic Key Management</strong>
+              <span class="text-xs text-slate-400">Every transaction uses a unique, single-use cryptographic session key generated directly inside memory.</span>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-3">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-sky-400 shrink-0 mt-0.5"></i>
+            <div>
+              <strong class="text-white text-sm block">Google Play Integrity Attestation</strong>
+              <span class="text-xs text-slate-400">Hardware-level trust verification preventing app execution on modified ROMs, emulators, or tampered hardware.</span>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-3">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-sky-400 shrink-0 mt-0.5"></i>
+            <div>
+              <strong class="text-white text-sm block">Bangladesh Bank Guidelines Compliant</strong>
+              <span class="text-xs text-slate-400">Architected from the ground up to satisfy local regulatory data sovereignty and transactional encryption mandates.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Code / Technical Spec Preview Box -->
+      <div class="lg:col-span-6 bg-nyrox-base rounded-2xl border border-nyrox-border p-6 font-mono text-xs text-slate-300 space-y-4">
+        <div class="flex items-center justify-between border-b border-nyrox-border pb-3 text-slate-500">
+          <span>nyrox-security-spec.json</span>
+          <span class="text-sky-400">TLS 1.3 | AES-256</span>
+        </div>
+        <pre class="overflow-x-auto text-[11px] leading-relaxed text-slate-400">
+{
+  "entity": "Nyrox Fintech Solutions Ltd.",
+  "jurisdiction": "Bangladesh",
+  "security_framework": "PCI-MPoC / EMVCo Level 2",
+  "encryption": {
+    "payload_cipher": "AES-256-GCM",
+    "key_exchange": "DUKPT (Derived Unique Key Per Transaction)",
+    "transit": "mTLS 1.3 with Certificate Pinning"
+  },
+  "runtime_integrity": {
+    "anti_tamper": "Hardware-backed Keystore",
+    "frida_detection": true,
+    "root_check": "Enforced Strict",
+    "zero_pan_storage": true
+  }
+}
+        </pre>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT & PARTNERSHIP INQUIRIES -->
+  <section id="contact" class="py-24 bg-nyrox-base">
+    <div class="max-w-3xl mx-auto px-6 text-center space-y-8">
+      
+      <div class="space-y-3">
+        <span class="text-sky-400 font-mono text-xs uppercase tracking-wider">Enterprise Engagement</span>
+        <h2 class="text-3xl font-bold text-white tracking-tight">Schedule an Institutional Briefing</h2>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">
+          Explore white-label SoftPOS solutions, core SDK licensing, or acquiring pilot partnerships for your bank or payment institution.
+        </p>
+      </div>
+
+      <form onsubmit="handleInquiry(event)" class="bg-nyrox-panel p-8 rounded-2xl border border-nyrox-border text-left space-y-4 max-w-xl mx-auto">
+        <div>
+          <label class="text-xs font-mono text-slate-400 block mb-1">Your Full Name</label>
+          <input type="text" required placeholder="Abir Hossain" class="w-full bg-nyrox-base border border-nyrox-border rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-sky-400">
+        </div>
+
+        <div>
+          <label class="text-xs font-mono text-slate-400 block mb-1">Financial Institution / Bank</label>
+          <input type="text" required placeholder="e.g. City Bank / BRAC Bank / MFS Operator" class="w-full bg-nyrox-base border border-nyrox-border rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-sky-400">
+        </div>
+
+        <div>
+          <label class="text-xs font-mono text-slate-400 block mb-1">Corporate Email Address</label>
+          <input type="email" required placeholder="partnerships@institution.com" class="w-full bg-nyrox-base border border-nyrox-border rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-sky-400">
+        </div>
+
+        <div>
+          <label class="text-xs font-mono text-slate-400 block mb-1">Area of Interest</label>
+          <select class="w-full bg-nyrox-base border border-nyrox-border rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-sky-400">
+            <option>SoftPOS White-Label Licensing</option>
+            <option>Merchant Acquiring Pilot Program</option>
+            <option>ISO 8583 Switching Middleware</option>
+            <option>General Strategic Partnership</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-lg bg-sky-500 hover:bg-sky-400 text-black font-semibold text-sm transition mt-2">
+          Submit Partnership Inquiry
+        </button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- CORPORATE FOOTER -->
+  <footer class="py-12 border-t border-nyrox-border bg-nyrox-base text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <div class="text-white font-bold text-sm tracking-wide">NYROX FINTECH SOLUTIONS LTD.</div>
+        <p class="text-slate-500 mt-1">Dhaka, Bangladesh &bull; info@nyroxfintech.com</p>
+      </div>
+
+      <div class="flex space-x-6 text-slate-400">
+        <a href="#compliance" class="hover:text-white transition">Security Architecture</a>
+        <a href="#solutions" class="hover:text-white transition">Enterprise Kernels</a>
+        <a href="#contact" class="hover:text-white transition">Corporate Contact</a>
+      </div>
+
+      <div class="text-slate-600 font-mono">
+        &copy; 2026 Nyrox Fintech Solutions Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function handleInquiry(e) {
+      e.preventDefault();
+      alert("Inquiry received. A representative from Nyrox Fintech Solutions Ltd. will respond to your institution shortly.");
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
